@@ -34,13 +34,13 @@ const Footer = () => {
               </span>
 
               <span className='w-[40px] h-[40px]  mt-8 bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
-                <a href='https://www.linkedin.com/in/minhad-rizwan/' className='text-gray-300 font-[500] text-[25px]'><i class="ri-linkedin-box-line"></i></a>
+                <a href='https://www.linkedin.com/in/minhad-rizwan/'target='blank' className='text-gray-300 font-[500] text-[25px]'><i class="ri-linkedin-box-line"></i></a>
               </span>
               <span className='w-[40px] h-[40px]  mt-8 bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
-                <a href='https://github.com/MinhadRizwan' className='text-gray-300 font-[500] text-[25px]'><i class='ri-github-line'></i></a>
+                <a href='https://github.com/MinhadRizwan' target='blank' className='text-gray-300 font-[500] text-[25px]'><i class='ri-github-line'></i></a>
               </span>
               <span className='w-[40px] h-[40px]  mt-8 bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
-                <a href='https://www.facebook.com/profile.php?id=100005557668805' className='text-gray-300 font-[500] text-[25px]'><i class="ri-facebook-box-line"></i></a>
+                <a href='https://www.facebook.com/profile.php?id=100005557668805' target='blank' className='text-gray-300 font-[500] text-[25px]'><i class="ri-facebook-box-line"></i></a>
               </span>
             </div>
           </div>

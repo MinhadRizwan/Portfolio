@@ -22,12 +22,12 @@ const Portfolio = () => {
         if (selectTab === 'all') {
             setPortfolios(data);
         }
-        if (selectTab === 'web-design') {
-            const filteredData = data.filter(item => item.category === 'Web Design')
+        if (selectTab === 'full-stack') {
+            const filteredData = data.filter(item => item.category === 'fullstack')
             setPortfolios(filteredData);
         }
-        if (selectTab === 'ux-design') {
-            const filteredData = data.filter(item => item.category === 'Ux')
+        if (selectTab === 'front-end') {
+            const filteredData = data.filter(item => item.category === 'frontend')
             setPortfolios(filteredData);
         }
     }, [selectTab])
@@ -48,13 +48,13 @@ const Portfolio = () => {
                     ease-in duration-100 py-2 px-4 rounded-[8px]'>
                             All
                         </button>
-                        <button onClick={() => setSelectTab('web-design')} className='bg-smallTextColor bg-black text-white font-[500] gap-2 hover:bg-smallTextColor
+                        <button onClick={() => setSelectTab('full-stack')} className='bg-smallTextColor bg-black text-white font-[500] gap-2 hover:bg-smallTextColor
                     ease-in duration-100 py-2 px-4 rounded-[8px]'>
                             Full Stack
                         </button>
-                        <button onClick={() => setSelectTab('ux-design')} className='bg-smallTextColor bg-black text-white font-[500] gap-2 hover:bg-smallTextColor
+                        <button onClick={() => setSelectTab('front-end')} className='bg-smallTextColor bg-black text-white font-[500] gap-2 hover:bg-smallTextColor
                     ease-in duration-100 py-2 px-4 rounded-[8px]'>
-                            UI/UX
+                            Front End
                         </button>
                     </div>
                 </div>
@@ -63,13 +63,18 @@ const Portfolio = () => {
                     {
                         portfolios?.slice(0, nextItems).map((portfolio, index) => (
                             <div key={index} data-aos='fade-zoom-in' data-aos-delay='50' data-aos-duration='1000' className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]'>
-                                <figure><img className='rounded-[8px]' src={portfolio.imgUrl} alt='' /></figure>
-
-                                <div className='w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
-                                    <div className='w-full h-full flex items-center justify-center'>
-                                        <button className='text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] 
-                                        font-[500] ease-in duration-200'>Details</button></div>
-                                </div>
+                                <div className='bg-primarycolor bg-smallTextColor rounded-t-2xl'>
+                                    <h2  className='text-white my-1 text-lg grid justify-items-center font-[500] gap-2 py-2 px-4'>{portfolio.name}</h2></div>
+                                <figure><img  src={portfolio.imgUrl} alt='' /></figure>
+                                <div className='bg-primarycolor bg-smallTextColor rounded-b-2xl'>
+                                    <a href={portfolio.githubUrl} target='blank'><button onClick={() => setSelectTab('all')} className='bg-smallTextColor bg-black text-white font-[500] gap-2 hover:bg-smallTextColor
+                                    ease-in duration-100 py-2 px-4 rounded-[8px]'>
+                                        GitHub
+                                    </button></a>
+                                    <a href={portfolio.siteUrl} target='blank'><button onClick={() => setSelectTab('full-stack')} className='bg-smallTextColor absolute right-0 bg-black text-white font-[500] gap-2 hover:bg-smallTextColor
+                                    ease-in duration-100 py-2 px-4 rounded-[8px]'>
+                                        Live
+                                    </button></a></div>
                             </div>
                         ))
                     }

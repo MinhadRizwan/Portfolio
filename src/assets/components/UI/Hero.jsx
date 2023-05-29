@@ -39,9 +39,9 @@ const Hero = () => {
                         </p>
                         <div className='flex items-center gap-9 mt-14'>
                             <span className='text-smallTextColor text-[20px] font-[600]'>Connect</span>
-                            <span><a href='https://www.linkedin.com/in/minhad-rizwan/' className='text-smallTextColor text-[25px] font-[600]'><i class="ri-linkedin-box-fill"></i></a></span>
-                            <span><a href='https://github.com/MinhadRizwan' className='text-smallTextColor text-[25px] font-[600]'><i class='ri-github-line'></i></a></span>
-                            <span><a href='https://www.facebook.com/profile.php?id=100005557668805' className='text-smallTextColor text-[25px] font-[600]'><i class='ri-facebook-line'></i></a></span>
+                            <span><a href='https://www.linkedin.com/in/minhad-rizwan/' target='blank' className='text-smallTextColor text-[25px] font-[600]'><i class="ri-linkedin-box-fill"></i></a></span>
+                            <span><a href='https://github.com/MinhadRizwan'target='blank' className='text-smallTextColor text-[25px] font-[600]'><i class='ri-github-line'></i></a></span>
+                            <span><a href='https://www.facebook.com/profile.php?id=100005557668805' target='blank' className='text-smallTextColor text-[25px] font-[600]'><i class='ri-facebook-line'></i></a></span>
                         </div>
                     </div>
                     {/* hero left end */}
